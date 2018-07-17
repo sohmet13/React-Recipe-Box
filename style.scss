@@ -1,0 +1,170 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Shrikhand|Lato);
+
+//colors
+$lilac: #DAB0D5;
+$grape: #382257;
+$lilacDark: #A16F9A;
+$jagger: #4A42A6;
+
+body {
+  background: $lilac;
+}
+h1 {
+  text-align: center;
+  width: 300px;
+  color: white;
+  font: normal 50px Shrikhand;
+  margin: auto;
+  cursor:pointer;
+}
+#names {
+  background: $grape;
+  color: white;
+  min-width: 500px;
+  max-width: 1000px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 10px $grape solid;
+  font: bold italic 20px Lato;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 100px;
+  li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px 0;
+    &.active  {
+      background: $lilac;
+      color: $grape;
+    }
+  }
+}
+#box {
+  margin: 10px auto;
+  background: $lilacDark;
+  min-width: 540px;
+  max-width: 1040px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  #head {
+    height: 80px;
+    background: $grape;
+    p {
+      color: white;
+      font: bold italic 30px Lato;
+      margin: auto;
+      padding: 20px 0 0 10px;
+      float:left;
+    }
+    i {
+      font-size: 35px;
+      margin: 20px 0 0 15px;
+      color: $lilacDark;
+      cursor: pointer;
+      //background: white;
+      &:hover {
+        color: $lilac;
+      }
+    }
+  }
+  #body {
+    height: 370px;
+    overflow-y: auto;
+    p {
+      color: white;
+      font: bold italic 20px Lato;
+      padding: 0 0 0 10px;
+    }
+    ul {
+      color:white;
+      font-size: 20px;
+      padding: 0 0 0 60px;
+    }
+    .dir {
+      list-style-type: decimal;
+    }
+  }
+  #bottom {
+    height: 50px;
+    background: $grape;
+    i {
+      font-size: 35px;
+      margin: 8px 0 0 10px;
+      color: $lilacDark;
+      cursor: pointer;
+       &:hover {
+         color: $lilac;
+       }
+    }
+  }
+}
+.add {
+  position:absolute;
+  top:25%;
+  left:0;
+  right:0;
+  z-index:11;
+  min-height: 450px;
+  min-width: 500px;
+  width: 500px;
+  background: $jagger;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  h2 {
+    color: white;
+    font: bold italic 25px Lato;
+  }
+  h3 {
+    color: white;
+    font: bold italic 15px Lato;
+  }
+  textarea {
+    background: $grape;
+    outline-color: $lilac;
+    width:300px;  
+    color:white;
+  }
+  #recname {
+    resize: none;
+  }
+  #ing, #dir {
+    resize: vertical;
+  }
+  i {
+    position: absolute;
+    top:10px;
+    right:20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: $grape;
+  }
+  .button {
+    margin: 10px auto;
+    height: 30px;
+    width: 50px;
+    background: $grape;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    p {
+      color: white;
+      padding: 5px 0 0 0;
+    }
+  }
+}
+#shade {
+  background:black; 
+  position:fixed; 
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100%; 
+  width:100%; 
+  z-index:10;
+  opacity: 0.7;
+}
