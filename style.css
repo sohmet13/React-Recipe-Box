@@ -1,103 +1,82 @@
-//fonts
 @import url(https://fonts.googleapis.com/css?family=Shrikhand|Lato);
-
-//colors
-$lilac: #dab0d5;
-$grape: #382257;
-$lilacDark: #a16f9a;
-$jagger: #4a42a6;
-
 body {
-  background: $lilac;
-}
+  background: #dab0d5; }
+
 h1 {
   text-align: center;
   width: 300px;
   color: white;
   font: normal 50px Shrikhand;
   margin: auto;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 #names {
-  background: $grape;
+  background: #382257;
   color: white;
   min-width: 500px;
   max-width: 1000px;
   margin: 10px auto;
   border-radius: 10px;
-  border: 10px $grape solid;
+  border: 10px #382257 solid;
   font: bold italic 20px Lato;
   padding: 10px;
   overflow-y: auto;
-  max-height: 100px;
-  li {
+  max-height: 100px; }
+  #names li {
     list-style-type: none;
     cursor: pointer;
-    padding: 10px 0;
-    &.active {
-      background: $lilac;
-      color: $grape;
-    }
-  }
-}
+    padding: 10px 0; }
+    #names li.active {
+      background: #dab0d5;
+      color: #382257; }
+
 #box {
   margin: 10px auto;
-  background: $lilacDark;
+  background: #a16f9a;
   min-width: 540px;
   max-width: 1040px;
   border-radius: 10px;
-  overflow: hidden;
-  #head {
+  overflow: hidden; }
+  #box #head {
     height: 80px;
-    background: $grape;
-    p {
+    background: #382257; }
+    #box #head p {
       color: white;
       font: bold italic 30px Lato;
       margin: auto;
       padding: 20px 0 0 10px;
-      float: left;
-    }
-    i {
+      float: left; }
+    #box #head i {
       font-size: 35px;
       margin: 20px 0 0 15px;
-      color: $lilacDark;
-      cursor: pointer;
-      &:hover {
-        color: $lilac;
-      }
-    }
-  }
-  #body {
+      color: #a16f9a;
+      cursor: pointer; }
+      #box #head i:hover {
+        color: #dab0d5; }
+  #box #body {
     height: 370px;
-    overflow-y: auto;
-    p {
+    overflow-y: auto; }
+    #box #body p {
       color: white;
       font: bold italic 20px Lato;
-      padding: 0 0 0 10px;
-    }
-    ul {
+      padding: 0 0 0 10px; }
+    #box #body ul {
       color: white;
       font-size: 20px;
-      padding: 0 0 0 60px;
-    }
-    .dir {
-      list-style-type: decimal;
-    }
-  }
-  #bottom {
+      padding: 0 0 0 60px; }
+    #box #body .dir {
+      list-style-type: decimal; }
+  #box #bottom {
     height: 50px;
-    background: $grape;
-    i {
+    background: #382257; }
+    #box #bottom i {
       font-size: 35px;
       margin: 8px 0 0 10px;
-      color: $lilacDark;
-      cursor: pointer;
-      &:hover {
-        color: $lilac;
-      }
-    }
-  }
-}
+      color: #a16f9a;
+      cursor: pointer; }
+      #box #bottom i:hover {
+        color: #dab0d5; }
+
 .add {
   position: absolute;
   top: 25%;
@@ -107,54 +86,46 @@ h1 {
   min-height: 450px;
   min-width: 500px;
   width: 500px;
-  background: $jagger;
+  background: #4a42a6;
   margin: auto;
   border-radius: 10px;
   text-align: center;
-  padding-bottom: 10px;
-  h2 {
+  padding-bottom: 10px; }
+  .add h2 {
     color: white;
-    font: bold italic 25px Lato;
-  }
-  h3 {
+    font: bold italic 25px Lato; }
+  .add h3 {
     color: white;
-    font: bold italic 15px Lato;
-  }
-  textarea {
-    background: $grape;
-    outline-color: $lilac;
+    font: bold italic 15px Lato; }
+  .add textarea {
+    background: #382257;
+    outline-color: #dab0d5;
     width: 300px;
-    color: white;
-  }
-  #recname {
-    resize: none;
-  }
-  #ing,
-  #dir {
-    resize: vertical;
-  }
-  i {
+    color: white; }
+  .add #recname {
+    resize: none; }
+  .add #ing,
+  .add #dir {
+    resize: vertical; }
+  .add i {
     position: absolute;
     top: 10px;
     right: 20px;
     font-size: 30px;
     cursor: pointer;
-    color: $grape;
-  }
-  .button {
+    color: #382257; }
+  .add .button {
     margin: 10px auto;
     height: 30px;
     width: 50px;
-    background: $grape;
+    background: #382257;
     text-align: center;
     border-radius: 5px;
-    cursor: pointer;
-    p {
+    cursor: pointer; }
+    .add .button p {
       color: white;
-      padding: 5px 0 0 0;
-    }
-  }
-}
+      padding: 5px 0 0 0; }
+
 #shade {
   background: black;
   position: fixed;
@@ -165,9 +136,10 @@ h1 {
   height: 100%;
   width: 100%;
   z-index: 10;
-  opacity: 0.7;
-}
+  opacity: 0.7; }
+
 .invisible {
   display: none;
-  height: 0;
-}
+  height: 0; }
+
+/*# sourceMappingURL=style.css.map */
